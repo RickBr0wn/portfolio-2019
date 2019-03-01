@@ -1,14 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  background-color: #eceff1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.nav-bar {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  padding: 1rem 1.4rem;
+  font-size: 2.2rem;
+  background: #333333;
+  color: #fff;
+  width: 100%;
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 28rem;
+  padding: 2.4rem;
+  align-items: center;
+}
+
+.header-container h1 {
+  text-transform: uppercase;
+}
+
+.header-container .profilePicture {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: #333333 solid 6px;
+  margin-top: 2.4rem;
+}
+
+.project-list {
+  /* background: coral;
+  width: 90%;
+  padding: 1.2rem;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 40px; */
+}
+
+.project-item {
+  margin: 0 0 20px;
+  overflow: hidden;
+  background: rgba(204, 204, 204, 0.2);
+  break-inside: avoid;
+  border-radius: 5px;
+}
+
+.project-item img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.text-container {
+  padding: 1.2rem;
+}
+
+.tech-text {
+  font-size: 12px;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.date-text {
+  font-size: 1rem;
+}
+
+/* @media (max-width: 1200px) {
+  .project-list {
+    columns: 3;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    columns: 2;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-list {
+    columns: 1;
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    padding: 10px 10px;
+  }
+} */

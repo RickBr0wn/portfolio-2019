@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import natours from '../Images/natours.png'
+import weather from '../Images/weather.png'
 
 export const ContextStore = React.createContext()
 
@@ -19,40 +20,54 @@ export class ContextStoreWrapper extends Component {
             'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         },
         {
-          title: 'Reciepe Finder',
-          image: natours,
-          techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
+          title: 'Local Weather Forecast',
+          image: weather,
+          techs: ['HTML', 'CSS', 'JAVASCRIPT'],
+          dateWritten: 'Jun 2018',
+          sourceLink: 'https://github.com/RickBr0wn/natours',
+          demoLink: 'https://rickbr0wn.github.io/natours/',
+          about:
+            'A Weather App created as part of my Free Code Camp Front End Certificate'
         },
         {
-          title: 'Reciepe Finder',
+          title: 'Natours',
           image: natours,
           techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
+          dateWritten: 'Jun 2018',
+          sourceLink: 'https://github.com/RickBr0wn/natours',
+          demoLink: 'https://rickbr0wn.github.io/natours/',
+          about:
+            'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         },
         {
-          title: 'Reciepe Finder',
+          title: 'Natours',
           image: natours,
           techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
+          dateWritten: 'Jun 2018',
+          sourceLink: 'https://github.com/RickBr0wn/natours',
+          demoLink: 'https://rickbr0wn.github.io/natours/',
+          about:
+            'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         },
         {
-          title: 'Reciepe Finder',
+          title: 'Natours',
           image: natours,
           techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
+          dateWritten: 'Jun 2018',
+          sourceLink: 'https://github.com/RickBr0wn/natours',
+          demoLink: 'https://rickbr0wn.github.io/natours/',
+          about:
+            'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         },
         {
-          title: 'Reciepe Finder',
+          title: 'Natours',
           image: natours,
           techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
-        },
-        {
-          title: 'Reciepe Finder',
-          image: natours,
-          techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018'
+          dateWritten: 'Jun 2018',
+          sourceLink: 'https://github.com/RickBr0wn/natours',
+          demoLink: 'https://rickbr0wn.github.io/natours/',
+          about:
+            'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         }
       ]
     }

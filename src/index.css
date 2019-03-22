@@ -67,9 +67,10 @@ body {
 .project-item {
   margin: 0 0 20px;
   overflow: hidden;
-  background: rgba(204, 204, 204, 0.2);
+  background: #fff;
   break-inside: avoid;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .project-item img {

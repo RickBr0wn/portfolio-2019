@@ -8,10 +8,11 @@ const ProjectItem = ({
   techs,
   sourceLink,
   demoLink,
-  about
+  about,
+  classIncrement
 }) => {
   return (
-    <div key={index} className='project-item'>
+    <div key={index} className={classIncrement}>
       <img src={image} alt='natours home page' />
       <div className='text-container'>
         <h2>{title}</h2>

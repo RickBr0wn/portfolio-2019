@@ -1,11 +1,5 @@
 import React, { Component } from 'react'
-import {
-  Navbar,
-  Header,
-  ProjectItem,
-  Masonry,
-  MasonryLayout
-} from './Components'
+import { Navbar, Header, ProjectItem } from './Components'
 import { ContextStoreWrapper, ContextStore } from './Store/ContextStoreWrapper'
 
 class App extends Component {
@@ -19,10 +13,11 @@ class App extends Component {
             {({ projects }) => {
               console.log(typeof projects)
               return (
-                <MasonryLayout gap={20}>
+                <div>
                   {projects &&
                     projects.map((item, index) => (
                       <ProjectItem
+                        classIncrement={`box-${index + 1} project-item`}
                         title={item.title}
                         image={item.image}
                         key={index}
@@ -33,7 +28,7 @@ class App extends Component {
                         about={item.about}
                       />
                     ))}
-                </MasonryLayout>
+                </div>
               )
             }}
           </ContextStore.Consumer>

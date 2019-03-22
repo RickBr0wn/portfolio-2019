@@ -13,7 +13,7 @@ const ProjectItem = ({
 }) => {
   return (
     <div key={index} className={classIncrement}>
-      <img src={image} alt='natours home page' />
+      <img src={image} alt={title} />
       <div className='text-container'>
         <h2>{title}</h2>
         <div className='date-text'>{dateWritten}</div>

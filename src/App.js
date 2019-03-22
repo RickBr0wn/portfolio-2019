@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
-import { Navbar, Header, ProjectItem } from './Components'
+import { Header, ProjectItem } from './Components'
 import { ContextStoreWrapper, ContextStore } from './Store/ContextStoreWrapper'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <Header />
         <ContextStoreWrapper>
           <ContextStore.Consumer>
             {({ projects }) => {
-              console.log(typeof projects)
               return (
-                <div>
+                <div className='grid'>
                   {projects &&
                     projects.map((item, index) => (
                       <ProjectItem

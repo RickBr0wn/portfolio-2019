@@ -27,11 +27,31 @@ body {
   overflow: hidden;
   background: #000;
   break-inside: avoid;
+  position: relative;
 }
 
 .project-item img {
   max-width: 100%;
   min-width: 100%;
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  background: #000;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.text-container:hover {
+  opacity: 0.9;
+  cursor: default;
 }
 
 .text-container {
@@ -87,14 +107,6 @@ body {
   height: 100%;
   max-width: 100%;
   transition: all 0.5s ease-in;
-}
-
-.grid img:hover {
-  opacity: 0.2;
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  overflow: hidden;
 }
 
 .grid {

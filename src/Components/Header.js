@@ -11,7 +11,7 @@ const Header = () => {
           className='profile-picture'
         />
         <h1>Rick Brown</h1>
-        <p>React Dev</p>
+        <p>React Developer</p>
       </div>
       <div className='menu-links'>
         <p>Projects</p>
@@ -19,7 +19,7 @@ const Header = () => {
         <p>About</p>
       </div>
       <div className='footer'>
-        <p>Rick Brown © 2019</p>
+        <p>Rick Brown © {new Date().getFullYear()}</p>
       </div>
     </div>
   )

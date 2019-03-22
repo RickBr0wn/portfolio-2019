@@ -6,12 +6,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <ContextStoreWrapper>
           <ContextStore.Consumer>
             {({ projects }) => {
               return (
                 <div className='grid'>
+                  <Header />
                   {projects &&
                     projects.map((item, index) => (
                       <ProjectItem

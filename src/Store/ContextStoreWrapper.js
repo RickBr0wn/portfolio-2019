@@ -73,16 +73,6 @@ export class ContextStoreWrapper extends Component {
           demoLink: 'https://rickbr0wn.github.io/natours/',
           about:
             'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
-        },
-        {
-          title: 'Natours',
-          image: pomodoro,
-          techs: ['HTML', 'CSS', 'SASS'],
-          dateWritten: 'Jun 2018',
-          sourceLink: 'https://github.com/RickBr0wn/natours',
-          demoLink: 'https://rickbr0wn.github.io/natours/',
-          about:
-            'This is a mock website written for an imaginary company. It is written soley in HTML and SASS. There are lots of unique and fun animations on display.'
         }
       ]
     }
